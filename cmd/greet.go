@@ -6,8 +6,8 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// greetCmd represents the greet command
-var greetCmd = &cobra.Command{
+// GreetCmd represents the greet command
+var GreetCmd = &cobra.Command{
 	Use:   "greet",
 	Short: "Say hello to the user",
 	Long:  `This command will greet the user with a message.`,
@@ -21,15 +21,13 @@ var greetCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(greetCmd)
-
 	// Here you will define your flags and configuration settings.
 
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
-	// greetCmd.PersistentFlags().String("foo", "", "A help for foo")
+	// GreetCmd.PersistentFlags().String("foo", "", "A help for foo")
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
-	// greetCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	// GreetCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
