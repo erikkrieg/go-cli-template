@@ -19,7 +19,7 @@ build *flags=build-flags:
 
 # Run compiles and runs the main Go package.
 run *flags=run-flags:
-  @go run {{flags}} ./main.go
+  @go run ./main.go {{flags}}
 
 # Test runs all tests.
 test *flags=test-flags:
