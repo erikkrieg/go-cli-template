@@ -2,7 +2,9 @@ package cmd
 
 import (
 	"fmt"
+	"strings"
 
+	"github.com/erikkrieg/go-cli-template/internal/greet"
 	"github.com/spf13/cobra"
 )
 
@@ -12,11 +14,13 @@ var GreetCmd = &cobra.Command{
 	Short: "Say hello to the user",
 	Long:  `This command will greet the user with a message.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		subject := "World"
+		var message string
 		if len(args) > 0 {
-			subject = args[0]
+			message = greet.Hello(greet.WithSubject(strings.Join(args, " ")))
+		} else {
+			message = greet.Hello()
 		}
-		fmt.Printf("Hello, %s\n", subject)
+		fmt.Println(message)
 	},
 }
 
