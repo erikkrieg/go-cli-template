@@ -1,6 +1,6 @@
-# Go Template
+# Go CLI Template
 
-Template for Basic Go projects.
+Template for CLI Go projects.
 
 **After creating a project from this template** you should run `just rename $user $project` to change the Go module name and imports. And be sure to update the readme!
 
