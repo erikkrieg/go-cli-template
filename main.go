@@ -1,11 +1,7 @@
 package main
 
-import (
-	"fmt"
-
-	hello "github.com/erikkrieg/go-cli-template/internal"
-)
+import "github.com/erikkrieg/go-cli-template/cmd"
 
 func main() {
-	fmt.Println(hello.SayHello())
+	cmd.Execute()
 }

@@ -20,6 +20,7 @@
             gopls
             golangci-lint
             just
+            cobra-cli
           ];
           shellHook = ''
             # Keep Go cache and module files in the project
